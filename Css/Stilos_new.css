@@ -83,3 +83,34 @@
     padding: 0;
     background-color: #ffffff;
   }
+
+  .ventanas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .carousel-slide {
+    max-width: 800px;
+    text-align: center;
+    background-color: #f2f7f1;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(153, 243, 175);
+    padding: 100px;
+    margin: 10px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 10px;
+    display: none;
+  }
+  
+  .error {
+    border-color: red;
+  }
+  
+  .error + .error-message {
+    display: block;
+  }
+  

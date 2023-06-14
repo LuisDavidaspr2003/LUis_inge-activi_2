@@ -19,27 +19,39 @@
         </ul>
       </nav>
       <img src="./image/Foto logo 3.png" alt="Imagen no cargada" width="150px" height="100px">
-    
+     
+     
+      <div class="ventanas">
 
-    <form><label for="nombre">Nombre:</label><br>
-      <input type="text" name="nombre" id="nombre" required><br>
-    
-    
-      <label for="descripcion">Descripcion:</label><br>
-    <input type="text" name="descripcion" id="descripcion" required><br>
-    
-    
-      <label for="direcion">Direccion:</label><br>
-      <input type="text" name="direcion" id="direcion" required><br>
-    
-    
-      <label for="imagen">Imagen URL:</label><br>
-      <input type="url" name="imagen" id="imagen" required>
-      <br><br>
-      <input type="submit" value="Guardar"></form>
+        <div class="carousel-slide active">
+      <form id="Myfomr">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" >
+        <span class="error-message" id="nombre-error">Campo requerido</span>
       
-    
+        <label for="descripcion">Descripción:</label>
+        <input type="text" name="descripcion" id="descripcion" >
+        <span class="error-message" id="descripcion-error">Campo requerido</span>
       
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" >
+        <span class="error-message" id="direccion-error">Campo requerido</span>
+      
+        <label for="imagen">Imagen URL:</label>
+        <input type="url" name="imagen" id="imagen" >
+        <span class="error-message" id="imagen-error">Campo requerido</span>
+      
+        <br><br>
+        <input type="submit" value="Guardar">
+      </form>
+      
+
+
+    </div>
+      
+    </div>
+    <script src="js/Leyenda.js"></script>
+ 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
 </body>
 </html>
